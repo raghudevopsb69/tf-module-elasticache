@@ -14,7 +14,7 @@ resource "aws_elasticache_cluster" "redis" {
   num_cache_nodes = var.num_cache_nodes
   engine_version  = var.engine_version
   port            = 6379
-  az_mode         = "cross-az"
+  az_mode         = var.az_mode
 }
 
 
