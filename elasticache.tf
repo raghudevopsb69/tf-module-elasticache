@@ -1,5 +1,5 @@
 resource "aws_elasticache_subnet_group" "elasticache" {
-  name       = "${var.env}-elasticache"
+  name       = "${var.env}-elasticache1"
   subnet_ids = local.app_subnets_ids
 
   tags = {
